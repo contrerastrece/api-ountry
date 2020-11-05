@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    --color-bg: #fafafa;
+    --color-bg-secondary: #fff;
+    --color-text: #000;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;   
+    position: relative;
+}
+
+.navbar {
+    background-color: var(--color-bg-secondary);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.container.header{
+    position: relative;
+    height: 3.5rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: space-between;
+}
+.custom-select{
+    width: 17rem;
+}
+.card {
+    /* display: flex; */
+    background-color: var(--color-bg-secondary);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    margin: auto;
+    /* justify-content:space-between; */
+	overflow: hidden;
+    /* margin-bottom: 1rem; */
+    margin-top:1rem;
+    max-width: 100%;
+    width: 16rem;
+}
+
+.card img {
+	object-fit: fill;
+	height: 10rem;
+	width: 100%;
+}
+.card-body {
+	padding:1rem 2rem 2rem 2rem;
+}
+.container.countries {
+	/* margin-top: -2.5rem; */
+	justify-content: center;
+}
+
+/*================= DARK MODE================= */
+.btn-dark-mode {
+    background-color: var(--color-bg-secondary);
+    opacity: 1;
+    transition: 0.3s;
+    color: var(--color-text);
+}
+
+.btn-dark-mode:hover {
+    opacity: 0.6;
+    color:var(--color-text);
+}
+
+body.dark-theme {
+    --color-bg: #202d36;
+    --color-bg-secondary: #2b3743;
+    --color-text: #ffff;
+    color:var(--color-text);
+}
+
